@@ -9,14 +9,14 @@ This repository contains Pytorch implementation of the method presented in "Clas
 * sklearn 0.19.1 +
 
 ## Training
-To replicate the results of paper on the tabular-data:
+To replicate the results of the paper on the tabular-data:
 ```
 python train_ad_tabular.py --n_rots=64 --n_epoch=25 --d_out=64 --ndf=32 --dataset=kdd 
 python train_ad_tabular.py --n_rots=256 --n_epoch=25 --d_out=128 --ndf=128 --dataset=kddrev
 python train_ad_tabular.py --n_rots=256 --n_epoch=1 --d_out=32 --ndf=8 --dataset=thyroid
 python train_ad_tabular.py --n_rots=256 --n_epoch=1 --d_out=32 --ndf=8 --dataset=arrhythmia 
 ```
-To replicate the results of paper on the image-data:
+To replicate the results of the paper on the image-data:
 ```
 python train_ad.py --n_epoch=16 --m=0.1
 ```
