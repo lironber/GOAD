@@ -18,7 +18,7 @@ python train_ad_tabular.py --n_rots=256 --n_epoch=1 --d_out=32 --ndf=8 --dataset
 ```
 To replicate the results of the paper on the image-data:
 ```
-python train_ad.py --n_epoch=16 --m=0.1
+python train_ad.py --m=0.1
 ```
 
 ## Citation
