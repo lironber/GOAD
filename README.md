@@ -1,5 +1,5 @@
 # GOAD
-This repository contains a PyTorch implementation of the method presented in "Classification-Based Anomaly Detection for General Data" by Liron Bergman and Yedid Hoshen, ICLR 2020.
+This repository contains a PyTorch implementation of the method presented in ["Classification-Based Anomaly Detection for General Data"](https://openreview.net/pdf?id=H1lK_lBtvS) by Liron Bergman and Yedid Hoshen, ICLR 2020.
 
 ## Requirements
 * Python 3 +
