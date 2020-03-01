@@ -1,5 +1,5 @@
 # GOAD
-This repository contains Pytorch implementation of the method presented in "Classification-Based Anomaly Detection for General Data" by Liron Bergman and Yedid Hoshen, ICLR 2020.
+This repository contains a PyTorch implementation of the method presented in "Classification-Based Anomaly Detection for General Data" by Liron Bergman and Yedid Hoshen, ICLR 2020.
 
 ## Requirements
 * Python 3 +
@@ -16,7 +16,7 @@ python train_ad_tabular.py --n_rots=256 --n_epoch=25 --d_out=128 --ndf=128 --dat
 python train_ad_tabular.py --n_rots=256 --n_epoch=1 --d_out=32 --ndf=8 --dataset=thyroid
 python train_ad_tabular.py --n_rots=256 --n_epoch=1 --d_out=32 --ndf=8 --dataset=arrhythmia 
 ```
-To replicate the results of the paper on the image-data:
+To replicate the results of the paper on CIFAR10:
 ```
 python train_ad.py --m=0.1
 ```
