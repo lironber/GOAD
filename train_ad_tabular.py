@@ -13,9 +13,12 @@ def load_trans_data(args):
     rots = np.random.randn(args.n_rots, n_dims, args.d_out)
 
     print('Calculating transforms')
-    x_train = np.stack([train_real.dot(rot) for rot in rots], 2)
-    val_real_xs = np.stack([val_real.dot(rot) for rot in rots], 2)
-    val_fake_xs = np.stack([val_fake.dot(rot) for rot in rots], 2)
+    # x_train = np.stack([train_real.dot(rot) for rot in rots], 2)
+    x_train = np.swapaxes(train_real.dot(rots), 1, 2)       # Much faster numpy operations. 
+    # val_real_xs = np.stack([val_real.dot(rot) for rot in rots], 2)
+    val_real_xs = np.swapaxes(val_real.dot(rots), 1, 2)
+    # val_fake_xs = np.stack([val_fake.dot(rot) for rot in rots], 2)
+    val_fake_xs = np.swapaxes(val_fake.dot(rots), 1, 2)
     x_test = np.concatenate([val_real_xs, val_fake_xs])
     return x_train, x_test, y_test_fscore, ratio
 
